@@ -12,10 +12,89 @@
   - Digest and Digest::MD5
   - MIME::Base64 (and pack and unpack)
 
+  - |
+    Calculate md5 digest for the first 4K bytes.
+    It will be more efficient to only scan 4K bytes
+    when a single file is more than 100M or 1G bytes.
+
+
+- UUID
+-
+  - UUID and Data::UUID
+
 
 - |
   YAML prettifier (aka beautifier)
   YAML::XS::Dump is ugly. Need to write my own version.
+
+
+- Date and timestamps.
+-
+  - Auto detect strings like "(20200223)".
+  - |
+    How to store different types of timestamps.
+    1. (20200223)
+    2. (20200223 2242)
+    3. (20200223 2240 2242)
+  - |
+    Uncertainty of time
+    In old diaryup days, there is uncertainty modifier of time:
+    1. (2242 delta)
+    2. (2242 guess)
+    3. (2240 delta 2242 guess)
+
+  - block scope of date
+
+
+- |
+  custom yaml data types
+  v.s.
+  maps with a "is: footype" or "type: bartype" key/ value pair
+
+
+- |
+  Distributed diaryhub files.
+  How to be consistent?
+  Use case: update some diaryhub file and merge.
+
+
+- |
+  Taskstatus - init, wip, suspended, done ..
+  Scheduler (when to begin)
+  History attributes
+
+  notification (like chrome notification)
+
+
+- |
+  (Syntax draft) Specify version at the begining of diaryhub files.
+-
+  - |
+    ---
+    v: 0.0
+    is: dheader
+    ---
+    ...
+
+
+- |
+  Embedded data (or tag interpolation)
+
+  In perl, values  can be inserted into double-quoted strings.
+  Insert a scalar: "foo${scalar}bar" or "foo$scalar".
+  Insert a list  : "foo@{[12, 34]}bar" or "foo@list".
+
+  In perl, there are quote and quote-like operators,
+  say qx{...}, qw{...}. ($ perldoc -f qx)
+
+  Maybe, add some qperson{tccg.im.+0} or qman{patrick}.
+  C++'s "using namespace tccg.im" might be useful.
+
+
+- |
+  Try to put dirayhub directories (workspace) in a shared folder
+  so that both a windows host and a ubuntu guest can both access.
+  This way, the annoying default Chinese big5 encoding can be bypassed.
 
 
 --- done
