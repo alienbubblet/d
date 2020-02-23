@@ -3,21 +3,23 @@
 -
   - redesign of diaryup project
 
--
-  - some modules that might be useful for this project
-  - 
-  - Digest and Digest::MD5
-  - MIME::Base64 and pack and unpack
 
+--- todo
+---
 
-- some useful modules
+- checksums and digest
 -
   - Digest and Digest::MD5
+  - MIME::Base64 (and pack and unpack)
 
-- Might need YAML prettifier (aka beautifier)
+
+- |
+  YAML prettifier (aka beautifier)
+  YAML::XS::Dump is ugly. Need to write my own version.
 
 
-- begin of done
+--- done
+---
 
 - Determine how to apply yaml (20200223)
 -
@@ -37,6 +39,4 @@
 
     Another reason is that YAML does not support double-quoted strings
     that cross multiple lines.
-
-- end of done
 
