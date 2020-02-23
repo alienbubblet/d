@@ -17,3 +17,11 @@
 - Might need YAML prettifier (aka beautifier)
 
 
+- begin of done
+
+- Determine how to apply yaml (20200223)
+-
+  - The result is syntax_draft.yml .
+
+- end of done
+
