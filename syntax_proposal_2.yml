@@ -1,0 +1,40 @@
+- begin of sample
+
+- sample v20200220_2008
+
+- some text
+
+- some long text
+  that cross multiple lines
+
+-
+  - some complex text
+  -
+  - by complex I mean there is some sub-text attached to the parent text
+  - maybe more than one sub-text
+
+-
+  - this is also complex text
+  - 
+  - |
+    - (((hey... can't find a way to serialize this part)))
+    - complex text can be nested
+      - like this
+        - and this
+  - blah
+  - blah blah
+  - blah blah blah
+
+-
+  - sub-text can be long text too
+  - 
+  - |
+    - (((hey... can't find a way to serialize this part either)))
+    - like this
+      blah blah blah
+      - and this
+        blah blah blah 
+  - and this
+    blah blah blah
+
+- end of sample
