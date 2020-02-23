@@ -1,0 +1,10 @@
+[user]
+	name = alienbubblet
+	email = 15263527+alienbubblet@users.noreply.github.com
+[alias]
+	lg = log --color --graph --all  --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	temp = status 1>&2 | grep && echo Hey > 4
+[core]
+	editor = vim
+[stash]
+	username = alienbubblet
