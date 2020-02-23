@@ -119,3 +119,23 @@
     Another reason is that YAML does not support double-quoted strings
     that cross multiple lines.
 
+
+--- other issues
+---
+
+- |
+  Reset all commits' eamil addresses
+  to comply with the private email setting in github
+  (2020023 tm0217)
+
+  It took me so long, but I still can't find a way to fix this.
+
+  Some git-rebase options:
+  --preserve-merges
+  --root
+  -i
+
+  Some git-commit options:
+  -C <commit>
+  --reset-author
+
