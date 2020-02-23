@@ -1,0 +1,19 @@
+
+- goal
+-
+  - redesign of diaryup project
+
+-
+  - some modules that might be useful for this project
+  - 
+  - Digest and Digest::MD5
+  - MIME::Base64 and pack and unpack
+
+
+- some useful modules
+-
+  - Digest and Digest::MD5
+
+- Might need YAML prettifier (aka beautifier)
+
+
