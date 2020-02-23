@@ -23,5 +23,20 @@
 -
   - The result is syntax_draft.yml .
 
+
+- Determine which YAML::* modules to parse yaml files.
+-
+  - |
+    YAML - pure perl script solution
+    YAML::XS - libyaml binding (YAML 1.1)
+
+    I choose YAML::XS.
+
+    It is more consistent since in other programming languages, say python,
+    there should be some binding to libyaml too.
+
+    Another reason is that YAML does not support double-quoted strings
+    that cross multiple lines.
+
 - end of done
 
